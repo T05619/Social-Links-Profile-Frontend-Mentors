@@ -1,0 +1,122 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/static/Inter-Regular.ttf) format("truetype");;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/static/Inter-SemiBold.ttf) format("truetype");;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/static/Inter-Bold.ttf) format("truetype");;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Grey-900);
+    height: 100vh;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Grey-800);
+    padding: 0rem 4rem;
+    border-radius: 1rem;
+    max-width: 30rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.Profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+img {
+    border-radius: 6rem;
+    margin-bottom: 1.5rem;
+    height: 6rem;
+}
+
+h1 {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--White);
+    margin-bottom: 0.6rem;
+}
+
+.Location {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--Green);
+}
+
+.Title {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--White);
+    margin-bottom: 1.5rem;
+}
+
+.Links {
+    font-family: "Inter";
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-bottom: 3rem;
+    max-width: 19rem;
+    width: 150%;
+}
+
+button {
+    background-color: var(--Grey-700);
+    color: var(--White);
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 19rem;
+    box-sizing: content-box;
+    transition: linear 0.2s;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Grey-700);
+}
+
+.attribution { position: absolute; font-size: 11px; text-align: center; bottom: 10px; }
+.attribution a { color: hsl(228, 45%, 44%); }
