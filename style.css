@@ -73,7 +73,7 @@ img {
 }
 
 h1 {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 25px;
     color: var(--White);
@@ -81,14 +81,14 @@ h1 {
 }
 
 .Location {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: var(--Green);
 }
 
 .Title {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--White);
@@ -96,7 +96,7 @@ h1 {
 }
 
 .Links {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 700;
 
     display: flex;
