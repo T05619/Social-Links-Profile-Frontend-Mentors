@@ -27,29 +27,35 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: var(--Grey-900);
     height: 100vh;
+}
+
+.Container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--Grey-800);
-    padding: 0rem 5rem;
-    border-radius: 1rem;
-    max-width: 30rem;
-    margin: 20px;
     text-align: center;
+    background-color: var(--Grey-800);
+
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+
+    max-width: 25.2rem;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    box-sizing: border-box;
 }
 
 .Profile {
@@ -92,12 +98,13 @@ h1 {
 .Links {
     font-family: "Inter";
     font-weight: 700;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.25rem;
     padding-bottom: 3rem;
-    max-width: 20rem;
-    width: 150%;
+    width: 100%;
 }
 
 button {
@@ -110,6 +117,8 @@ button {
     font-weight: 700;
     box-sizing: content-box;
     transition: linear 0.2s;
+    max-width: 20rem;
+    width: 100%;
 }
 
 button:hover {
@@ -117,5 +126,5 @@ button:hover {
     color: var(--Grey-700);
 }
 
-.attribution { position: absolute; font-size: 11px; text-align: center; bottom: 10px; }
+.attribution { color: var(--White); position: absolute; font-size: 11px; text-align: center; bottom: 10px; }
 .attribution a { color: hsl(228, 45%, 44%); }
